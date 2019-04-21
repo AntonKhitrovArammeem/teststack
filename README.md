@@ -6,6 +6,14 @@ The test task for the SRE engineer candidates
 
 -You can put additional DB initialization/dump SQL instuctions to files/django.sql 
 
+- files/postgres.pw contains password for postgres user (Postgres 9.6 container)
+
+- files/default.py contains secret key generated at http://www.miniwebtool.com/django-secret-key-generator/
+
+- files/local.py  contains database connection settings for django-sample-app
+
+- files/Dockerfile contains instuctions to build Docker image for django-sample-app
+
 -Test stack includes django-sample-app and postgres 9.6, just run 'ansible-playbook django.yml -i testhost --ask-vault-pass' 
 You will be prompted for ansible-vault password for encrypted files, containers and all required packages will be installed from scratch
 
