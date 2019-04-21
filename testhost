@@ -1,0 +1,6 @@
+[all]
+10.156.0.2
+
+[all:vars]
+remote_user = soulezzz
+private_key_file = /root/.ssh/key
