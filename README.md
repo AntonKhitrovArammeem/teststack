@@ -4,10 +4,13 @@ The test task for the SRE engineer candidates
 
 -All the files are encrypted with ansible-vault
 
--Test stack includes django-sample-app and postgres 9.6, just run 'ansible-playbook django.yml -i testhost --ask-vault-pass' 
-You will be prompted for ansible-vault password for encrypted files 
+-You can put additional DB initialization/dump SQL instuctions to files/django.sql 
 
--No additional Ansible modules required to be installed, tested with Ansible 2.7.10
+-Test stack includes django-sample-app and postgres 9.6, just run 'ansible-playbook django.yml -i testhost --ask-vault-pass' 
+You will be prompted for ansible-vault password for encrypted files, containers and all required packages will be installed from scratch
+
+-No additional Ansible modules required to be installed, tested with Ansible 2.7.10 on Ubuntu 18.04
+
 
 -As the result you should receive the following output log:
 
